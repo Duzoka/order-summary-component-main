@@ -16,10 +16,9 @@ body {
     padding: 0.063rem;
 
     /* just to make some tests */
-    background-color: yellow;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .card-wrapper {
@@ -28,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: red;
+    background: white;
     border-radius: 25px;
 }
 
@@ -41,6 +40,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .text-section {
@@ -48,36 +49,61 @@ body {
     place-items: center;
     text-align: center;
     gap: 1rem;
-    background-color: aqua;
     padding: 0 6.25rem;
+    margin: 2rem 0 1.5rem;
     
 }
 
 .text-section h1 {
     font-weight: 900;
+    font-size: 1.35rem;
 }
 
+
 .plan-section {
-    display: flex;
-    height: 50px;
-    align-items: center;
+    display: grid;
+    place-items: center;
     padding: 0 6.25rem;
-    margin: 0 0 32px;
-    background-color: brown;
+    margin: 0 0 1.5rem;
+    
 }
 
 .plan-section img {
     margin-right: 15px;
 }
 
-.plan-section .plan-about { 
+
+.content-section {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border-radius: 15px;
+}
+
+.content-section a {
+    margin: 0 0 0 1.875rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: right;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+.content-section .plan-about { 
     display: grid; 
     text-align: left;
+    margin: 0 1.875rem 0 0;
 }
 
 .plan-about h1 {
     font-size: 0.9rem;
     font-weight: 700;
+}
+
+.plan-about p {
+    color: var(--desaturated-blue)
 }
 
 .footer {
@@ -92,16 +118,20 @@ body {
 .footer .process-btn {
     display: flex;
     width: 100%;
-    height: 30px;
+    height: 40px;
     background-color: var(--bright-blue);
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease-in-out;
+    
     
 }
 
 .footer .process-btn a {
     text-decoration: none;
+    color: var(--very-pale-blue);
+    transition: 0.3s ease-in-out
 }
 
 .footer .cancel-btn {
@@ -111,12 +141,28 @@ body {
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    margin: 15px 0 25px;
+    margin: 0.938rem 0 1.8rem;
     
 }
 
 .footer .cancel-btn a {
     text-decoration: none;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.content-section a:hover {
+    text-decoration: none;
+    color: var(--pale-blue);
+}
+
+.footer .process-btn:hover {
+    background: hsla(245, 75%, 52%, 0.695);
+}
+
+.cancel-btn a:hover {
+    color: var(--dark-blue);
 }
 
 
