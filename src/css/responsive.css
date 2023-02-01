@@ -1,3 +1,46 @@
 @media (max-width: 375px) {
+    .card-container {
+        width: 375px;
+    }
+
+    .text-section {
+        padding: 0 2rem;
+        
+    }
+
+    .plan-section {
+        padding: 0 1rem;
+    }
+
+    .content-section a {
+        margin: 0;
+    }
     
+     
+    .content-section .plan-about { 
+
+        margin: 0;
+    }
+
+    .footer {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .text-section {
+        padding: 0 5.9rem;
+        
+    }
+
+    .plan-section {
+        padding: 0 5.9rem;
+        
+    }
+
+    .footer {
+        padding: 0 5.9rem;
+    }
+
 }
