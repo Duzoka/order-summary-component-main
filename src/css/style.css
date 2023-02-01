@@ -3,8 +3,9 @@ body {
     height: 100vh;
     background: url("../images/pattern-background-desktop.svg") no-repeat;
     background-size: cover;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     
 }
@@ -13,7 +14,6 @@ body {
     width: 470px;
     max-height: 100%;
     margin: 1rem 2rem;
-    padding: 0.063rem;
 
     /* just to make some tests */
     /* display: flex;
