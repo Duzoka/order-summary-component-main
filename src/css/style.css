@@ -8,7 +8,10 @@ body {
     align-items: center;
     
     
+    
 }
+
+
 
 .card-container {
     width: 470px;
@@ -33,6 +36,11 @@ body {
 .card-wrapper div {
     width: 100%;
     height: auto;
+}
+
+.img-head {
+    width: 100%;
+    height: 100%;
 }
 
 .card-wrapper .img-head img {
